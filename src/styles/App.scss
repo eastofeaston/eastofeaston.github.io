@@ -30,6 +30,7 @@ $link: $dark-slate;
 
 
 $header-height: calc(max(6vh, 50px));
+$logo-height: 28px;
 $footer-height: 6vh;
 $scrollbar-width: calc(100vw - 100%);
 
@@ -65,6 +66,9 @@ $scrollbar-width: calc(100vw - 100%);
   pointer-events: none;
 }
 
+.header-logo{
+  height: $logo-height;
+}
 
 .App-header {
   background-color: white;
