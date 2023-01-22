@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './styles/App.scss';
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 function App(props) {
   return (
     <>
         <Header/>
         <MainBody/>
+        <Footer/>
     </>
   );
 }

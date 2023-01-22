@@ -2,7 +2,7 @@ import React from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { Container, Button } from 'reactstrap';
 import Menu from './Menu';
-import Brandmark from '../icons/Brandmark.svg';
+import {ReactComponent as Brandmark} from '../icons/Brandmark.svg';
 
 
 
@@ -23,12 +23,12 @@ function HeaderContents(props) {
 		<div className='full-width header vertical-center'>
 			<Container>
 				<div className='header-container'>
+                    <Brandmark className={'header-logo'}/>
 					<h1
 						className='tco-text-upper header-title'
 						data-testid='header-title'
 					>
-                        <img src={Brandmark} className={'header-logo'}/>
-						Rye Easton
+                        Rye Easton
 					</h1>
 					<HeaderButton {...props} />
 				</div>

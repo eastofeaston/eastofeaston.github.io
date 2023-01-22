@@ -31,13 +31,14 @@ $link: $dark-slate;
 
 $header-height: calc(max(6vh, 50px));
 $logo-height: 28px;
-$footer-height: 6vh;
+$footer-height: 25px;
+$footer-logo-height: 18px;
 $scrollbar-width: calc(100vw - 100%);
 
 .tco-text {
   font-family: 'prox-light', sans-serif;
-  font-size: 16px;
-  color: white;
+  font-size: $footer-logo-height;
+  color: $black-80;
 }
 
 .tco-text-upper {
@@ -68,6 +69,16 @@ $scrollbar-width: calc(100vw - 100%);
 
 .header-logo{
   height: $logo-height;
+  width: $logo-height;
+  fill: $white;
+  stroke: none;
+}
+
+.footer-logo{
+  height: $footer-logo-height;
+  width: $footer-logo-height;
+  fill: $black-80;
+  stroke: none;
 }
 
 .App-header {
@@ -90,6 +101,16 @@ $scrollbar-width: calc(100vw - 100%);
 
   background-color: $primary;
   color: #FFFFFF;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width-alternate {
+  width: 100%;
+
+  background-color: $white;
+  color: $black-80;
 
   margin-left: auto;
   margin-right: auto;
@@ -122,6 +143,12 @@ $scrollbar-width: calc(100vw - 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-item{
