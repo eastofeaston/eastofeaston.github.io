@@ -54,7 +54,7 @@ class MenuButtonProps {
 
 function buildMenuButtons(props) {
 	return [
-		new MenuButtonProps('about-button', props.toggleAbout, <BsFillPeopleFill />, 'About'),
+		new MenuButtonProps('about-button', props.toggleAbout, <BsFillPeopleFill />, 'About', true),
 	];
 }
 
