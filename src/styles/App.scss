@@ -43,7 +43,7 @@ $scrollbar-width: calc(100vw - 100%);
 
 .tco-text-upper {
   font-family: 'prox-light', sans-serif;
-  font-size: 28px;
+  font-size: calc(min(28px, 7vw));
   letter-spacing: .05em;
   line-height: 1em;
   text-transform: uppercase;
@@ -69,7 +69,7 @@ $scrollbar-width: calc(100vw - 100%);
 
 .header-logo{
   height: $logo-height;
-  width: $logo-height;
+  width: 58px;
   fill: $white;
   stroke: none;
 }
