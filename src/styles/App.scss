@@ -1,21 +1,20 @@
-
 $burnt-purple: #610b4a;
-$gold: #C8C372;
-$white: #FFFFFF;
-$green: #1E4D2B;
+$gold: #c8c372;
+$white: #ffffff;
+$green: #1e4d2b;
 
 // Secondary
 
-$black-80: #59595B;
-$aggie-orange: #D9782D;
+$black-80: #59595b;
+$aggie-orange: #d9782d;
 
 // Tertiary
 
-$alfalfa: #C9D845;
-$canyon: #CC5430;
+$alfalfa: #c9d845;
+$canyon: #cc5430;
 $dark-slate: #105456;
-$reservoir: #12A4B6;
-$sunshine: #ECC530;
+$reservoir: #12a4b6;
+$sunshine: #ecc530;
 
 // Color Theme
 $primary: $burnt-purple;
@@ -28,7 +27,6 @@ $link: $dark-slate;
 
 // Shaping
 
-
 $header-height: calc(max(6vh, 50px));
 $logo-height: 28px;
 $footer-height: 25px;
@@ -36,15 +34,15 @@ $footer-logo-height: 18px;
 $scrollbar-width: calc(100vw - 100%);
 
 .tco-text {
-  font-family: 'prox-light', sans-serif;
+  font-family: "prox-light", sans-serif;
   font-size: $footer-logo-height;
   color: $black-80;
 }
 
 .tco-text-upper {
-  font-family: 'prox-light', sans-serif;
+  font-family: "prox-light", sans-serif;
   font-size: calc(min(28px, 7vw));
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   line-height: 1em;
   text-transform: uppercase;
   color: white;
@@ -67,14 +65,14 @@ $scrollbar-width: calc(100vw - 100%);
   pointer-events: none;
 }
 
-.header-logo{
+.header-logo {
   height: $logo-height;
   width: 58px;
   fill: $white;
   stroke: none;
 }
 
-.footer-logo{
+.footer-logo {
   height: $footer-logo-height;
   width: $footer-logo-height;
   fill: $black-80;
@@ -100,7 +98,7 @@ $scrollbar-width: calc(100vw - 100%);
   width: 100%;
 
   background-color: $primary;
-  color: #FFFFFF;
+  color: #ffffff;
 
   margin-left: auto;
   margin-right: auto;
@@ -119,43 +117,42 @@ $scrollbar-width: calc(100vw - 100%);
 // Body Styles
 
 .body {
-    padding-left: $scrollbar-width;
-    margin-bottom: $footer-height;
-    position: relative;
-    z-index: 1;
+  padding-left: $scrollbar-width;
+  margin-bottom: $footer-height;
+  position: relative;
+  z-index: 1;
 }
 
 // Header Styles
 
 .header {
-    position: fixed;
-    padding-left: $scrollbar-width;
-    top: 0;
-    height: $header-height;
-    z-index: 2;
+  position: fixed;
+  padding-left: $scrollbar-width;
+  top: 0;
+  height: $header-height;
+  z-index: 2;
 }
 
-.header-title{
-    align-self: end;
+.header-title {
+  align-self: end;
 }
 
-.header-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer-container{
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.menu-item{
-    display: flex;
-    align-items: baseline;
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.menu-item {
+  display: flex;
+  align-items: baseline;
+}
 
 // Bootstrap
 
