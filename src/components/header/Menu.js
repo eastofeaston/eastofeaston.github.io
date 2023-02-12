@@ -6,8 +6,8 @@ import {
   DropdownToggle,
 } from "reactstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
-//import { FaHome, FaPlus, FaTrashAlt, FaFolderOpen, FaRuler , FaFileDownload} from 'react-icons/fa';
-import { BsFillPeopleFill } from "react-icons/bs";
+import { FaEnvelope } from 'react-icons/fa';
+import { BsFillPersonFill } from "react-icons/bs";
 import { useToggle } from "../../hooks/useToggle";
 
 export default function Menu(props) {
@@ -57,7 +57,7 @@ function buildMenuButtons(props) {
     new MenuButtonProps(
       "about-button",
       props.toggleAbout,
-      <BsFillPeopleFill />,
+      <BsFillPersonFill />,
       "About",
       true
     ),

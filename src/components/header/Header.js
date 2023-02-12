@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdClose } from "react-icons/io";
 import { Container, Button } from "reactstrap";
 import Menu from "./Menu";
-import { ReactComponent as Brandmark } from "../icons/Brandmark.svg";
+import { ReactComponent as Brandmark } from "../icons/brandmark.svg";
 
 export default function Header(props) {
   //const [showAddPlace, toggleAddPlace] = useToggle(false);
