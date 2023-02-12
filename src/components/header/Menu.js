@@ -59,7 +59,7 @@ function buildMenuButtons(props) {
       props.toggleAbout,
       <BsFillPersonFill />,
       "About",
-      true
+      false
     ),
   ];
 }
