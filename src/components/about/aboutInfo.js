@@ -1,4 +1,4 @@
-import headlinePic from "../img/logo512.png";
+import headlinePic from "../img/ftcollins.jpeg";
 
 
 

@@ -28,6 +28,7 @@ $link: $dark-slate;
 // Shaping
 
 $header-height: calc(max(6vh, 50px));
+$header-buffer: calc($header-height + 2.5vh);
 $logo-height: 28px;
 $footer-height: 25px;
 $footer-logo-height: 18px;
@@ -58,6 +59,12 @@ $scrollbar-width: calc(100vw - 100%);
 
 .App {
   text-align: center;
+  min-height: calc(100vh - $header-buffer - $footer-height - 5vh);
+  margin-top: $header-buffer;
+  margin-bottom: $footer-height;
+  padding-left: $scrollbar-width;
+  position: relative;
+  z-index: 1;
 }
 
 .App-logo {
@@ -81,7 +88,6 @@ $scrollbar-width: calc(100vw - 100%);
 
 .App-header {
   background-color: white;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,15 +118,6 @@ $scrollbar-width: calc(100vw - 100%);
 
   margin-left: auto;
   margin-right: auto;
-}
-
-// Body Styles
-
-.body {
-  padding-left: $scrollbar-width;
-  margin-bottom: $footer-height;
-  position: relative;
-  z-index: 1;
 }
 
 // Header Styles

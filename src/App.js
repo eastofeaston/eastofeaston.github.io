@@ -21,7 +21,7 @@ function MainBody(props) {
   return (
     <div className="App">
       <Collapse isOpen={props.showAbout}>
-        <About closePage={props.toggleAbout} />
+          <About closePage={props.toggleAbout} />
       </Collapse>
       <Collapse isOpen={!props.showAbout}>
         <header className="App-header">
