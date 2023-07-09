@@ -7,7 +7,7 @@ import {
 } from "reactstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaEnvelope } from 'react-icons/fa';
-import { BsFillPersonFill } from "react-icons/bs";
+import { BsFillPersonFill, BsCameraFill, BsCollectionFill } from "react-icons/bs";
 import { useToggle } from "../../hooks/useToggle";
 
 export default function Menu(props) {
@@ -59,6 +59,27 @@ function buildMenuButtons(props) {
       props.toggleAbout,
       <BsFillPersonFill />,
       "About",
+      true
+    ),
+    new MenuButtonProps(
+      "portfolio-button",
+      props.togglePhotos,
+      <BsCollectionFill />,
+      "Portfolio",
+      true
+    ),
+    new MenuButtonProps(
+      "photography-button",
+      props.togglePhotos,
+      <BsCameraFill />,
+      "Photography",
+      true
+    ),
+    new MenuButtonProps(
+      "contact-button",
+      props.toggleContact,
+      <FaEnvelope />,
+      "Contact",
       true
     ),
   ];

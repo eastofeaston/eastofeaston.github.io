@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./styles/App.scss";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
@@ -26,7 +27,7 @@ function MainBody() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            <FaGithub className={"App-link-logo"} />
           </a>
           &bull;
           <a
@@ -35,7 +36,16 @@ function MainBody() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            <FaLinkedin className={"App-link-logo"} />
+          </a>
+          &bull;
+          <a
+            className="App-link"
+            href="https://www.twitter.com/eastofeaston"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter className={"App-link-logo"} />
           </a>
         </p>
       </header>
