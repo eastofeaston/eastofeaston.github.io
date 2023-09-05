@@ -12,3 +12,9 @@ test("eastofeaston: renders linkedin link", () => {
   const linkElement = screen.getByText(/linkedin/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test("eastofeaston: renders mailto link", () => {
+  render(<App />);
+  const linkElement = screen.getByText(/mailto/i);
+  expect(linkElement).toBeInTheDocument();
+});

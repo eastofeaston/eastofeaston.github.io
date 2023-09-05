@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./styles/App.scss";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
@@ -19,7 +19,8 @@ function MainBody() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Pardon the dust! Work in progress.</p>
+        <p>Software Engineer based in Fort Collins, CO.</p>
+        <p>You can see my professional online presence and reach me here:</p>
         <p>
           <a
             className="App-link"
@@ -41,11 +42,11 @@ function MainBody() {
           &bull;
           <a
             className="App-link"
-            href="https://www.twitter.com/eastofeaston"
+            href="mailto:rye@ryeeaston.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className={"App-link-logo"} />
+            <FaEnvelope className={"App-link-logo"} />
           </a>
         </p>
       </header>
