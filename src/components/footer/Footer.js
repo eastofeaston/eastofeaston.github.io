@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Button } from "reactstrap";
+import { Container } from "reactstrap";
 import GetYear from "../utils/GetYear";
 import { ReactComponent as Brandmark } from "../icons/brandmark.svg";
 import { FaHeart, FaReact, FaGithub } from "react-icons/fa";

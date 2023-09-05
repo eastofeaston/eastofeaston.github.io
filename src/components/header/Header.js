@@ -1,17 +1,13 @@
 import React from "react";
-import { IoMdClose } from "react-icons/io";
-import { Container, Button } from "reactstrap";
-import Menu from "./Menu";
+import { Container } from "reactstrap";
 import { ReactComponent as Brandmark } from "../icons/brandmark.svg";
+import { ReactComponent as Buffer } from "../icons/buffer.svg";
+
 
 export default function Header(props) {
-  //const [showAddPlace, toggleAddPlace] = useToggle(false);
   return (
     <React.Fragment>
-      <HeaderContents
-        toggleAbout={props.toggleAbout}
-        showAbout={props.showAbout}
-      />
+      <HeaderContents/>
     </React.Fragment>
   );
 }
@@ -28,23 +24,9 @@ function HeaderContents(props) {
           >
             Rye Easton
           </h1>
-          <HeaderButton {...props} />
+          <Buffer className={"header-logo"} />
         </div>
       </Container>
     </div>
-  );
-}
-
-function HeaderButton(props) {
-  return props.showAbout ? (
-    <Button
-      data-testid="close-about-button"
-      color="primary"
-      onClick={() => props.toggleAbout()}
-    >
-      <IoMdClose size={32} />
-    </Button>
-  ) : (
-    <Menu toggleAbout={props.toggleAbout} />
   );
 }
