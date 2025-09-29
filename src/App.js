@@ -19,7 +19,7 @@ function MainBody() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Software Engineer based in Fort Collins, CO.</p>
+        <p>Student in Fort Collins, CO</p>
         <p>You can see my professional online presence and reach me here:</p>
         <p>
           <a
